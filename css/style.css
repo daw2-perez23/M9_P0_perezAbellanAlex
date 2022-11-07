@@ -1,0 +1,467 @@
+
+/*Definimos el tamaño de la web entera y los hacemos que sea flex*/
+#web{
+    width: auto;
+    display: flex;
+    min-height: 100vh;
+}
+
+/*Tamaño de la parte izquierda*/
+#izq{
+    width: 20%;
+
+}
+
+/*Tamaño de la parte derecha*/
+#der{
+    width: 75%;
+
+}
+
+/*Color del enlace de arriba*/
+#enlaces>main>nav>a{
+    color: #7f888f;
+}
+
+/*Color del enlace en la etiqueta strong*/
+strong{
+    color: #000000;
+}
+
+/*Ocultar submenus*/
+li ul{
+    display: none;
+}
+
+/*Mostrar submenu*/
+li:hover ul{
+    display: block;
+}
+
+/*Color de los enlaces del hover*/
+ul li ul li{
+    color: #7f888f;
+}
+
+/*Quitar el formato de enlaces de los li*/
+nav ul li{
+    list-style: none;
+}
+
+/*Definir el estilo del navegador del menu a la izquierda*/
+#menu nav ul li{
+    list-style: none;
+    font-size: 0.9em;
+    letter-spacing: 0.075em;
+    border-top: solid 1px 
+    rgba(210, 215, 217, 0.75);
+    padding: 0.625em 0; 
+}
+
+/*Tamaño del texto del body*/
+body{
+    font-size: 20px;
+}
+
+/*Color y tamaño de los hr*/
+hr{
+    color: #5b6063;
+    margin: 20px;   
+}
+
+/*Tamaño y margen de los h2 dentro del menú*/
+#menu h2{
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+/*Tamaño, color, fuente, y el borde rojo de los h2*/
+h2{
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.75em;
+    border-bottom: solid 3px #f56a6a;
+    display: inline-block;
+    margin: 0 0 2.5em 0;
+}
+
+/*Color de fondo y altura del menú*/
+#menu{
+    background-color: #f5f6f7;  
+    height: 100%;
+}
+
+/*Formato y borde de los a dentro de los ul del menú*/
+#menu ul a{
+    border-bottom: 0;
+    color: inherit;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+/*Formato de los iconos*/
+#icons{
+    float: right;
+    display: flex;
+    letter-spacing: 1em;
+    color: black;
+    margin: auto;
+}
+
+/*Formato de los enlaces de la parte de arriba*/
+#enlaces{
+    border-bottom: solid 5px #f56a6a;
+    padding: 0em 0 1em 0;
+    position: relative;
+    border-bottom: solid 3px #f56a6a;
+    margin: 50px;
+    text-decoration: none;
+    
+}
+
+/*Quitar el estilo de los enlaces (No sé porqué, pero no me lo hace en los últimos)*/
+a{
+    text-decoration: none !important;
+}
+
+/*Cambiar el color y la fuente de los enlaces de la parte de arriba*/
+#enlaces a{
+    color: black;
+    font-family: "Roboto Slab", serif;
+}
+
+/*Tamaño de las imágenes*/
+#imagen img{
+    border-radius: 0.375em;
+    width: 80%;
+    margin: 110px   
+}
+
+/*Estilo de los botones*/
+.actions{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*Tamaño del texto*/
+#texto{
+    width: 50%;
+    margin: 50px;
+}
+
+/*Tamaño de la imagen con id #imagen*/
+#imagen{
+    width: 75%;
+
+}
+
+/*Margen del contenido del texto y que sea tipo flex*/
+#contenido{
+    display: flex;
+    margin-left: 1em;
+
+}
+
+/*Tamaño, color y fuente de los h1*/
+h1{
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 3.5em;
+
+}
+
+/*Margem del texto del menu*/
+#txtMenu{
+    margin: 30px;
+}
+
+/*Estilo del botón grande*/
+#boton1{
+    border-radius: 0.375em;
+    box-shadow: inset 0 0 0 2px #f56a6a; 
+    color: #f56a6a;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Estilo del botón del menú izquierda (este es redundante pero por si un caso)*/
+#boton2{
+    border-radius: 0.375em;
+    box-shadow: inset 0 0 0 2px #f56a6a;
+    color: #f56a6a !important;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Quito el flex de la parte de abajo para que se ponga abajo y no a la izquierda*/
+#articulos{
+    display: none;
+}
+
+/*Formato de las p dentro de los section*/
+section p{
+    color: #7f888f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65;
+    margin: 10px;
+}
+
+/*Este es un párrafo que cambié manual porque no me funcionaba con el id="p"*/
+#p{
+    color: #7f888f;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 0 2em 0;
+    letter-spacing: 0.040em;
+}
+
+/*Definicion de la etiqueta img, borde y margen*/
+img{
+    border-radius: 0.375em;
+    margin: 20px;
+}
+
+/*Texto del principo definido con el id="responsive", cambio de color, fuente, tamaño y márgenes*/
+#responsive{
+    color: #7f888f;
+    font-family: "Roboto Slab", serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    margin-top: -0.5em;
+}
+
+/*Color de texto, la fuente y el margen del texto del footer identificado con el id="foot"*/
+#foot{
+    color: #9fa3a6;
+    font-size: 0.7em;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px;
+    text-decoration: none;
+}
+
+/*Los iconos de la parte de contacto, color, fuente, y posición*/
+#contacto li i{
+    color: #f56a6a;
+    display: inline-block;
+    font-size: 1em;
+    height: 1.125em;
+    left: 0;
+    line-height: 1.125em;
+    text-align: center;
+    top: 1em;
+    width: 1.5em;
+}
+
+/*Color, fuente, margen, relleno y decoración de los enlaces de la parte de contactos*/
+#contacto li a{
+    color: #9fa3a6;
+    font-size: 0.75678em;
+    font-family: "Open Sans", sans-serif;
+    margin: 5px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+/*Tamaño del div de iconos de la izquierda*/
+#iconsIzq{
+    width: 50%;
+}
+
+/*Tamaño del div de iconos de la derecha*/
+#iconsDer{
+    width: 50%;
+}
+
+/*Flex del div que contiene iconsDer e iconsIzq para ponerlos en el formato requerido*/
+#iconos{
+    display: flex;
+}
+
+/*Rotación, radio, borde, margen y tamaño de los rombos que dentro tienen un icono. En este caso he usado la clase rombo*/
+.rombo{
+    transform: rotate(45deg);
+    border-radius: 0.25rem;
+    border: solid 2px rgba(210, 215, 217, 0.75);
+    display: block;
+    left: 50%;
+    margin-left: 2em;
+    top: 50%;
+    height: 5.5em;
+    width: 5.5em;
+}
+
+/*Rotación a la inversa para ponerlo recto, color, tamaño y margen de los iconos de los rombos */
+span{
+    color: #f56a6a;
+    font-size: 2.75rem;
+    margin: 35px 0 0 35px;
+    top: 0.05em;
+    transform: rotate(-45deg);
+}
+
+/*Borde, relleno y margen del div que contiene los rombos*/
+#rombos{
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    padding: 5em 0 3em 3em;
+    margin-left: 1em;
+    
+}
+
+/*Margen del div con la clase content que contiene el h3 y el p de la parte de abajo del todos*/
+.content{
+    margin: 0 0 0 15em;
+}
+
+/*Tamaño, color y fuente de las p en el div de clase content*/
+.content p{
+    color: #7f888f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65;
+ 
+}
+
+/*Fuente, color, y margen de los h3*/
+h3{
+    font-size: 1.25em;
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+/*Margen, borde y relleno del div con id="fotos"*/
+#fotos{
+    margin-left: 4em;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    padding-top: 4em;
+}
+
+/*Del div con id ftsUp, he añadido un flex, margen, relleno y borde en la parte de arriba*/
+#ftsUp{
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+/*Quitar el estilo de los enlaces en el div con id="ftsUp" (no funciona)*/
+#ftsUp a{
+    text-decoration: none;
+}
+
+/*Poner un flex en el div de id="ftsBot"*/
+#ftsBot{
+    display: flex;
+}
+
+/*Quitar el estilo de los enlaces en el div con id="ftsBot" (no funciona)*/
+#ftsBot a{
+    text-decoration: none;
+}
+
+/*Margen de los p del div con id="ftsUp"*/
+#ftsUp p{
+    margin-left: 1.7em;
+}
+
+/*Margen de los h3 del div con id="ftsUp"*/
+#ftsUp h3{
+    margin-left: 1.2em;
+}
+
+/*Margen y tamaño de los ul del div con id="ftsUp"*/
+#ftsUp ul{
+    margin-left: 1.7em;
+    width: 10%; 
+}
+
+/*Tamaño de las imagenes del div con id="ftsUp"*/
+#ftsUp img{ 
+    width: 80%;  
+}
+
+/*Margen de los p del div con id="ftsBot"*/
+#ftsBot p{
+    margin-left: 1.7em;
+}
+
+/*Margen de los h3 del div con id="ftsBot"*/
+#ftsBot h3{
+    margin-left: 1.2em;
+}
+
+/*Margen y tamaño de los ul del div con id="ftsBot"*/
+#ftsBot ul{
+    margin-left: 1.7em;
+    width: 10%; 
+}
+
+/*Tamaño de las imagenes del div con id="ftsBot"*/
+#ftsBot img{ 
+    width: 80%;  
+}
+
+/*Color, forma del cuadrado, borde del cuadrado, familia, relleno, margen, tamaño y estilo del texto de los botones con la clase botons*/
+.botons{
+    border-radius: 0.375em;
+    box-shadow: inset 0 0 0 2px #f56a6a;
+    color: #f56a6a;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Color de fondo y relleno del div del buscador*/
+#buscador{
+    background-color: #eff1f2;  
+    padding: 1em 0 1em 2em;
+}
+
+/*Tamaño, color de fondo, borde y radio del borde y tamaño de la barra de búsqueda*/
+#barra{
+    height: 2.75em;
+    background: #ffffff;
+    border-radius: 0.375em;
+    border: solid 1px rgba(210, 215, 217, 0.75);
+    width: 80%;
+}
+
+/*Color, posición, margen, rotación y opacidad del icono de la lupa*/
+#lupa{
+    color: #7f888f;
+    position: absolute;
+    margin: 10px 0 0 12em ;
+    transform: rotate(85deg);
+    opacity: 0.325;
+}
